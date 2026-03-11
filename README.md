@@ -57,15 +57,6 @@ The schema enforces referential integrity through foreign key constraints.
 
 ---
 
-## Example Query
-
-Example SQL query retrieving female patients living in selected suburbs:
-
-```sql
-SELECT FirstName, LastName
-FROM Patient
-WHERE Gender = 'female'
-AND Suburb IN ('St Kilda', 'Lidcombe');
 
 ## Description
 
