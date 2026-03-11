@@ -60,11 +60,12 @@ The schema enforces referential integrity through foreign key constraints.
 
 ## Description
 
-- **schema/** – Contains the SQL scripts to create tables (`Patient`, `Practitioner`, `Appointment`, etc.) and populate them with test data.  
+- **schema/** – Contains the SQL scripts to create tables (`Patient`, `Practitioner`, `Appointment`, etc.) and populate them with test data.
+- **procedures_triggers/** – Includes stored procedures, triggers, and views used for data manipulation and automation. 
 - **queries/** – Includes example SQL queries demonstrating database usage, joins, and data retrieval.  
 - **dumps/** – Full database export from XAMPP/phpMyAdmin for testing or restoration.  
 - **README.md** – Overview of the project, instructions, and context.  
-- **.gitignore** – Optional file to ignore unnecessary files from version control (e.g., system or editor files).
+
 
 ## How to Run Locally
 
