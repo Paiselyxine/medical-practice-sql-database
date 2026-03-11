@@ -66,3 +66,35 @@ SELECT FirstName, LastName
 FROM Patient
 WHERE Gender = 'female'
 AND Suburb IN ('St Kilda', 'Lidcombe');
+
+## Description
+
+- **schema/** – Contains the SQL scripts to create tables (`Patient`, `Practitioner`, `Appointment`, etc.) and populate them with test data.  
+- **queries/** – Includes example SQL queries demonstrating database usage, joins, and data retrieval.  
+- **dumps/** – Full database export from XAMPP/phpMyAdmin for testing or restoration.  
+- **README.md** – Overview of the project, instructions, and context.  
+- **.gitignore** – Optional file to ignore unnecessary files from version control (e.g., system or editor files).
+
+## How to Run Locally
+
+1. **Install XAMPP** (or any local MySQL/MariaDB server).  
+   - Download: [https://www.apachefriends.org/index.html](https://www.apachefriends.org/index.html)
+
+2. **Start Apache & MySQL** in XAMPP control panel.  
+
+3. **Create the database**:  
+   - Open **phpMyAdmin** (usually `http://localhost/phpmyadmin`)  
+   - Click **New** → Enter database name: `MedicalPractice` → **Create**.
+
+4. **Import the schema**:  
+   - Go to the **Import** tab in your new database.  
+   - Select `schema/database_schema.sql` and run it.  
+   - This will create the tables and insert test data.
+
+5. **Optional: Restore full dump**:  
+   - If you want the full dataset from XAMPP, import `dumps/xampp_full_dump.sql`.
+
+6. **Run queries**:  
+   - Open `queries/example_queries.sql` in phpMyAdmin SQL tab, or use any MySQL client to test queries.
+
+---
